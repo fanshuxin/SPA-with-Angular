@@ -1,0 +1,15 @@
+<ol>
+
+	<h3 >Category: {{category.categoryName}}</h3>
+
+  <li ng-repeat="item in category.items">
+  <ul>
+  <li ng-if="item.large_portion_name!=null  && item.large_portion_name.length!=0">Large Portion Name: {{item.large_portion_name}}</li>
+  <li> Name: {{item.name}} </li>
+  <li ng-if="item.description!=null  && item.description.length!=0">  Description: {{item.description}} </li>
+   <li> Price Large: {{item.price_large}} </li>
+  <li ng-if="item.price_small!=null && item.price_small.length!=0"> Price Small: {{item.price_small}}</li>
+  </ul>
+   </li>
+
+</ol>
